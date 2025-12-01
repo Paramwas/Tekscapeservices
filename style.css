@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    padding-top: 80px; 
+    background: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;       /* stays above everything */
+    background: #ffffff; /* or your preferred color */
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); /* optional nice shadow */
+}
+
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #0056ff;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #0056ff;
+}
+
+.hero {
+    height: 100vh;              /* Full page height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    /* Center content vertically */
+    align-items: center;        /* Center content horizontally */
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    color: #002b80;
+}
+
+.hero p {
+    margin: 20px auto;
+    width: 70%;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #0056ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-top: 20px;
+}
+
+.section {
+    padding: 80px 40px;
+}
+
+.section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+.alt {
+    background: #f5f5f5;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+.service-card, .market-card {
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.service-card h3, .market-card h3 {
+    color: #0056ff;
+    margin-bottom: 12px;
+}
+
+
+@media (max-width: 600px) {
+    .hero p {
+        width: 100%;
+    }
+}
+/* --- Improved About Section --- */
+
+.about-section {
+    background: #f8faff;
+    border-top: 2px solid #e1e8ff;
+    border-bottom: 2px solid #e1e8ff;
+    padding: 100px 40px;
+}
+
+.about-container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-header h2 {
+    font-size: 34px;
+    color: #002b80;
+    text-align: center;
+}
+
+.about-intro {
+    text-align: center;
+    width: 70%;
+    margin: 20px auto 50px;
+    font-size: 17px;
+    color: #555;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.about-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    border-left: 6px solid #0056ff;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.about-card h3 {
+    font-size: 20px;
+    color: #0056ff;
+    margin-bottom: 12px;
+}
+
+.about-card p {
+    color: #444;
+    line-height: 1.6;
+}
+
+/* ---- Contact Section ---- */
+
+.contact-section h2 {
+    font-size: 32px;
+    color: #002b80;
+    text-align: center;
+}
+
+.contact-sub {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+    font-size: 17px;
+}
+
+.contact-container {
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    align-items: start;
+}
+
+.contact-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 10px 0 5px;
+    font-weight: 600;
+    color: #0056ff;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-btn {
+    margin-top: 20px;
+    padding: 12px;
+    border: none;
+    background: #0056ff;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.contact-btn:hover {
+    background: #003fba;
+}
+/* --- Footer Styles --- */
+
+.footer {
+    background: #0c1b3a;
+    color: #d9e2f8;
+    padding: 60px 30px 30px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 40px;
+}
+
+.footer-col h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.footer-col p {
+    line-height: 1.6;
+    color: #c6d4f6;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin: 8px 0;
+}
+
+.footer-col ul li a {
+    color: #d9e2f8;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.footer-col ul li a:hover {
+    color: #4c9fff;
+}
+
+/* Social Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    height: 40px;
+    width: 40px;
+    background: #1c2f5b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #d9e2f8;
+    font-size: 16px;
+    transition: 0.25s ease;
+}
+
+.social-icons a:hover {
+    background: #4c9fff;
+    color: #ffffff;
+    transform: translateY(-4px);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    border-top: 1px solid #264072;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    color: #9eb2d9;
+    font-size: 14px;
+}
+.slide-in {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: slideIn 0.8s ease-out forwards;
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+

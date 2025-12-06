@@ -27,49 +27,81 @@ header {
 }
 
 
+
+
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    color: #0056ff;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 32px;
+    font-weight: 800;
+    color: #025eaaff ;
 }
+
+
+.logo-avatar {
+    height: 90px;          
+    width: 90px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: 1px solid #007bff; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;   
+}
+
+.logo-avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;     
+}
+
+
 
 nav a {
     margin-left: 20px;
     text-decoration: none;
-    color: #333;
+    color: #025eaaff;
     font-weight: 500;
 }
 
 nav a:hover {
-    color: #0056ff;
+    color: #5dd5f3ff;
+    font-weight: 600;
 }
 
 .hero {
-    height: 100vh;              /* Full page height */
+    height: 100vh;              
     display: flex;
     flex-direction: column;
-    justify-content: center;    /* Center content vertically */
-    align-items: center;        /* Center content horizontally */
+    justify-content: center;   
+    align-items: center;        
     text-align: center;
     padding: 0 20px;
 }
 
 .hero h1 {
-    font-size: 42px;
-    color: #002b80;
+    font-size: 50px;
+    font-weight: 600;
+
+    color: #025eaaff;
 }
 
 .hero p {
-    margin: 20px auto;
+    margin: 30px auto;
     width: 70%;
-    font-size: 18px;
+    color: rgb(1, 14, 17) ;
+    font-weight: 500;
+    font-size: 20px;
 }
 
 .btn {
     display: inline-block;
     padding: 12px 24px;
-    background: #0056ff;
+    background: #025eaaff;
     color: #fff;
+    font-weight: 600;
     text-decoration: none;
     border-radius: 6px;
     margin-top: 20px;
@@ -105,7 +137,7 @@ nav a:hover {
 }
 
 .service-card h3, .market-card h3 {
-    color: #0056ff;
+    color: #025eaaff;
     margin-bottom: 12px;
 }
 

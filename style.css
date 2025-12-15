@@ -9,7 +9,7 @@ body {
     padding-top: 80px; 
     background: #ffffff;
     color: #333;
-    line-height: 1.6;
+    line-height: 1;
 }
 
 header {
@@ -40,8 +40,8 @@ header {
 
 
 .logo-avatar {
-    height: 90px;          
-    width: 90px;
+    height: 60px;          
+    width: 60px;
     border-radius: 100%;
     overflow: hidden;
     border: 1px solid #007bff; 
@@ -381,6 +381,7 @@ nav a:hover {
         transform: translateX(0);
     }
 }
+
 
 
 
